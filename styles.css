@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --pink-brown: #E1A289;
+    --light-pink: #FFBDC8;
+    --middle-pink: #FF8692;
+    --dark-pink: #FF8692;
+    --dark-pink-brown: #4F0113;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: var(--pink-brown);
+    color: var(--dark-pink-brown);
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-evenly;
+
+    @media (max-width: 640px){
+        flex-direction: column;
+    }
+}
+
+.nav-bar a{
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+}
+
+.nav-bar a::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0px;
+    background-color: var(--dark-pink);
+}
+
+.nav-bar a:hover{
+    color: var(--dark-pink);
+}
+
+.nav-bar{
+    padding: 10px;
+    background-color: white;
+}
+
