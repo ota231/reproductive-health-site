@@ -156,3 +156,12 @@ body {
 span .bold{
     font-weight: 900;
 }
+#logo {
+    display: block;
+    display: inline-block;
+    margin: 0px; 
+    float: right;
+    height: 140px;
+    width: 150px; 
+    border-radius: 90%; 
+  }
