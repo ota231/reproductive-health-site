@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root{
     --pink-brown: #E1A289;
@@ -26,7 +27,7 @@ body {
     box-sizing: inherit;
 }
 
-ul{
+.nav-bar ul{
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -60,7 +61,81 @@ ul{
 }
 
 .nav-bar{
-    padding: 10px;
+    padding: 28px 10px;
     background-color: white;
 }
 
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 0px;
+}
+
+.statement{
+    font-size: 36px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin-bottom: 32px;;
+}
+
+.description{
+    margin-bottom: 32px;
+}
+
+.hero button{
+    color: white;
+    font-size: 18px;
+    background-color: var(--dark-pink);
+    padding: 16px 32px;
+    border-radius: 24px;
+    border-color: white;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    color: white;
+    background-color: var(--dark-pink-brown);
+}
+    
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    width: 300px;
+    background-color: var(--middle-pink);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.types-container{
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.card-name{
+    font-weight: bold;
+}
+
+.card span{
+    font-weight: bold;
+}
+
+.card-results{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card ol,
+.card ul{
+    margin: 0px;
+}
