@@ -5,7 +5,6 @@
     --pink-brown: #E1A289;
     --light-pink: #FFBDC8;
     --middle-pink: #FF8692;
-    --dark-pink: #FF8692;
     --dark-pink-brown: #4F0113;
 }
 
@@ -34,10 +33,15 @@ body {
     display: flex;
     font-size: 24px;
     justify-content: space-evenly;
+    align-items: center;
 
-    @media (max-width: 640px){
+    @media only screen and (max-width: 640px){
         flex-direction: column;
     }
+}
+
+ul:first-child{
+    margin-bottom: 12px;
 }
 
 .nav-bar a{
@@ -53,11 +57,11 @@ body {
     right: 0px;
     bottom: -3px;
     left: 0px;
-    background-color: var(--dark-pink);
+    background-color: var(--middle-pink);
 }
 
 .nav-bar a:hover{
-    color: var(--dark-pink);
+    color: var(--middle-pink);
 }
 
 .nav-bar{
@@ -65,27 +69,34 @@ body {
     background-color: white;
 }
 
+.nav-bar img{
+    max-width: auto;
+    max-height: 36px;
+}
+
 .mission{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 56px 0px;
+    padding: 72px 0px;
 }
 
 .statement{
-    font-size: 36px;
+    font-size: 48px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    margin-bottom: 32px;;
+    margin-bottom: 48px;;
 }
 
 .description{
     margin-bottom: 32px;
+    text-align: center;
+    margin: 0 48px 72px 48px;
 }
 
 .hero button{
     color: white;
     font-size: 18px;
-    background-color: var(--dark-pink);
+    background-color: var(--middle-pink);
     padding: 16px 32px;
     border-radius: 24px;
     border-color: white;
@@ -93,7 +104,7 @@ body {
 }
 
 .hero button:hover{
-    color: white;
+    color: var(--middle-pink);
     background-color: var(--dark-pink-brown);
 }
     
@@ -104,15 +115,10 @@ body {
     max-width: 400px;
     background-color: var(--middle-pink);
     padding: 8px;
-    /*padding: .75rem;
-    margin-bottom: 2rem;
-    flex-basis: 33.333%;
-    flex-grow: 0;
-    flex-shrink: 0;*/
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 
 .types-container{
@@ -123,6 +129,12 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     justify-content: center;
+}
+
+.types-header{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .card-header{
@@ -139,15 +151,6 @@ body {
     font-weight: bold;
 }
 
-/*.card-results{
-    display: flex;
-}
-
-.card-benefits,
-.card-side-effects{
-    width: 50%
-}*/
-
 .card ol,
 .card ul{
     margin: 0px;
@@ -156,12 +159,32 @@ body {
 span .bold{
     font-weight: 900;
 }
-#logo {
-    display: block;
-    display: inline-block;
-    margin: 0px; 
-    float: right;
-    height: 140px;
-    width: 150px; 
-    border-radius: 90%; 
-  }
+
+.team-header{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 72px 0 24px 0;
+}
+
+.members{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 48px;
+}
+
+.member-name{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--dark-pink-brown);
+    min-height: 72px;
+    flex-direction: column;
+}

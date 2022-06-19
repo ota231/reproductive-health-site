@@ -14,6 +14,7 @@ body{
 .answers label{
   display: block;
 }
+
 button{
     font-family: 'Work Sans', sans-serif;
       font-size: 22px;
@@ -25,10 +26,11 @@ button{
       cursor: pointer;
       margin-bottom: 20px;
   }
-  button:hover{
+
+button:hover{
     color: white;
     background-color: #FF1493;
-  }
+}
   
 #submit{
 	font-family: sans-serif;
@@ -64,4 +66,7 @@ button{
     position: relative;
     height: 200px;
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
